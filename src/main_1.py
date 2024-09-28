@@ -12,6 +12,11 @@ def clear_names(file_name: str) -> list:
                 new_names_list.append(new_name)
     return new_names_list
 
+def is_cyrillic(name_item):
+    """Проверка на вхождение кириллицы в строку"""
+def filter_russian_names(names_list: list) -> list:
+    """Фильтрация имён, написанных на русском"""
+    new_names_list = list()
 
 if __name__ == '__main_1__':
     cleared_name = clear_names('names.txt')
